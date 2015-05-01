@@ -82,8 +82,6 @@ for query in queriesResult:
 
 g.close()
 
-print os.path.dirname(os.path.abspath(__file__))
-
 print "Tiempo de ejecucion: ",time.time()-t0
 
 
