@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 import dns.resolver #dnspython
 import threading
 import time # para ver rendimiento
@@ -82,6 +82,8 @@ for query in queriesResult:
 	index=index+1
 
 g.close()
+
+print os.getcwd()
 
 print "Tiempo de ejecucion: ",time.time()-t0
 
