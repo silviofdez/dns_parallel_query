@@ -51,7 +51,7 @@ t0 = time.time()
 
 queriesResult = []
 
-f = open(os.getcwd()+"query.txt")
+f = open(os.getcwd()+"/query.txt")
 
 for line in f:
 	server = line.split()[0]
@@ -73,7 +73,7 @@ for th in threading.enumerate():
     th.join()
 
 #volcamos resultados a un fichero
-g=open(os.getcwd()+"query_results.txt","w")
+g=open(os.getcwd()+"/query_results.txt","w")
 
 index = 1
 for query in queriesResult:
