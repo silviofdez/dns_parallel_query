@@ -3,6 +3,7 @@ import dns.resolver #dnspython
 import threading
 import time # para ver rendimiento
 import logging
+import os
 
 #numero maximo de hilos simultaneos
 max_threads = 50
