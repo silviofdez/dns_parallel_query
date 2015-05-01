@@ -51,7 +51,7 @@ t0 = time.time()
 
 queriesResult = []
 
-f = open(os.getcwd()+"/query.txt")
+f = open(os.path.dirname(os.path.abspath(__file__))+"/query.txt")
 
 for line in f:
 	server = line.split()[0]
@@ -71,9 +71,8 @@ for th in threading.enumerate():
     if th is mt:
         continue
     th.join()
-
 #volcamos resultados a un fichero
-g=open(os.getcwd()+"/query_results.txt","w")
+g=open(os.path.dirname(os.path.abspath(__file__))+"/query_results.txt","w")
 
 index = 1
 for query in queriesResult:
@@ -83,7 +82,7 @@ for query in queriesResult:
 
 g.close()
 
-print os.getcwd()
+print os.path.dirname(os.path.abspath(__file__))
 
 print "Tiempo de ejecucion: ",time.time()-t0
 
