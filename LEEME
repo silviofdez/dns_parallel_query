@@ -4,4 +4,4 @@ wget https://github.com/silviofdez/dns_parallel_query/blob/master/chef-repo.tar.
 tar zxf chef-repo.tar.gz
 cd chef-repo
 chef-solo -c solo.rb -j web.json
-#el resultado de la consulta se almacena en /root/chef-solo/query_results.txt
+#el programa en python se almacena y se ejecuta desde /opt/dpq, el resultado (ejecutao automaticamente) se almacena en /opt/dpq/query_results.txt
