@@ -1,0 +1,7 @@
+Se debe ejecutar lo siguiente como root
+curl -L https://www.opscode.com/chef/install.sh | bash #instalamos chef
+wget https://github.com/silviofdez/dns_parallel_query/blob/master/chef-repo.tar.gz?raw=true -O ./chef-repo.tar.gz #descargamos cookbooks
+tar zxf chef-repo.tar.gz
+cd chef-repo
+chef-solo -c solo.rb -j web.json
+#el resultado de la consulta se almacena en /root/chef-solo/query_results.txt
